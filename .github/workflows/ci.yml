@@ -63,10 +63,10 @@ jobs:
           install-system-deps: 'false'
 
       - name: Build image
-        run: rdt build-docker
+        run: rdt docker-build
 
   #     - name: Push image
-  #       run: rdt deploy-docker
+  #       run: rdt docker-deploy
   #       env:
   #         REGISTRY_USER: ${{ github.actor }}
   #         REGISTRY_TOKEN: ${{ secrets.GITHUB_TOKEN }}

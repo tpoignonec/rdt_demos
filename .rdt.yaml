@@ -18,7 +18,7 @@ test:
   # packages_select: []
 
 docker:
-  # registry: registry.app.unistra.fr/group/project
+  registry: ghcr.io/tpoignonec
   # dockerfile: Dockerfile
   # builder: docker                    # docker | kaniko
   # base_image: ""                     # default: ros:<distro>-ros-base
