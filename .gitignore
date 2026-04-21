@@ -4,7 +4,7 @@
 *.devcontainer
 *.vscode
 *.gitlab-ci.yml
-*.github
+# *.github
 *.pre-commit-config.yaml
 .venv
 
