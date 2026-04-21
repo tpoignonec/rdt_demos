@@ -65,8 +65,8 @@ jobs:
       - name: Build image
         run: rdt docker-build
 
-  #     - name: Push image
-  #       run: rdt docker-deploy
-  #       env:
-  #         REGISTRY_USER: ${{ github.actor }}
-  #         REGISTRY_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Push image
+        run: rdt docker-deploy
+        env:
+          REGISTRY_USER: ${{ github.actor }}
+          REGISTRY_TOKEN: ${{ secrets.GITHUB_TOKEN }}
