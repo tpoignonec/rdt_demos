@@ -2,6 +2,9 @@ name: Install rdt
 description: Install rdt tool into a virtualenv at /opt/venv
 
 inputs:
+  version:
+    description: Version of rdt to install (git ref, tag, or branch)
+    default: main
   install-system-deps:
     description: Install git and python3-venv via apt-get (not needed on bare ubuntu-latest runners)
     default: 'true'
@@ -23,5 +26,5 @@ runs:
       run: |
         python3 -m venv /opt/venv \
         && /opt/venv/bin/pip install --upgrade pip \
-        && /opt/venv/bin/pip install git+https://github.com/tpoignonec/rdt.git@tpo/fix_doc_gen \
+        && /opt/venv/bin/pip install git+https://github.com/tpoignonec/rdt.git@${{ inputs.version }} \
         && ln -s /opt/venv/bin/rdt /usr/local/bin/rdt

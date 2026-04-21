@@ -5,7 +5,7 @@
 *.vscode
 *.gitlab-ci.yml
 # *.github
-*.pre-commit-config.yaml
+# *.pre-commit-config.yaml
 .venv
 
 # Colcon
